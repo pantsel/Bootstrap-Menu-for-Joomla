@@ -22,8 +22,10 @@ $navposition = ($params->get('navposition') == 'default')?'':$params->get('navpo
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </a>
-        <!--<a class="navbar-brand" href="#">Brand</a>-->
-    </div>
+    <!-- Be sure to leave the brand out there if you want it shown -->
+    <?php if($params->get('navbrand') && $params->get('navbrand') != ''):?>
+       <a class="brand" href=""><?=$params->get('navbrand')?></a>   
+    <?php endif;?>
     <div class="nav-collapse collapse">
         <ul class="nav navbar-nav menu<?php echo $class_sfx;?>"<?php
                 $tag = '';
@@ -114,6 +116,7 @@ $navposition = ($params->get('navposition') == 'default')?'':$params->get('navpo
                 }
         }
         ?></ul>
+    </div>
     </div>
 </div>
 </div>

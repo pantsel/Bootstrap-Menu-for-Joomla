@@ -4,7 +4,7 @@
 	version="1.1"
 	client="site"
 	method="upgrade">
-	<name>mod_bootstrapmenu</name>
+	<name>Bootstrap Menu</name>
 	<author>Panagis Tselentis</author>
 	<creationDate>April 2014</creationDate>
 	<copyright></copyright>
@@ -12,7 +12,7 @@
 	<authorEmail>tselentispanagis@gmail.com</authorEmail>
 	<authorUrl>subprimead.com</authorUrl>
 	<version>1.0.0</version>
-	<description>A joomla native menu extention for bootstrap 2.x</description>
+	<description>A joomla native menu extention for bootstrap 2.x.<![CDATA[<br />]]>Needs manual installation of bootstrap-dropdown.js in in order to function properly with dropdowns</description>
 	<files>
 		<filename module="mod_bootstrapmenu">mod_bootstrapmenu.php</filename>
 		<folder>tmpl</folder>
@@ -107,6 +107,7 @@
                                     <option value="navbar-fixed-top">fixed top</option>
                                     <option value="navbar-fixed-bottom">fixed bottom</option>
                                 </field>
+                                <field name="navbrand" type="text" default="" label="Navbar Brand" description="" size="10" />
 				<field
 					name="class_sfx"
 					type="text"
